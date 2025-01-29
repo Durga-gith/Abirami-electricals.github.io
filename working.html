@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abirami Electricals | Motor and Electrical Sales and Service</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url('https://www.shutterstock.com/image-photo/large-factory-workshop-space-building-600nw-2283958221.jpg') no-repeat center/cover;
+            background-color: #d4f1c5;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: #006400;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #3cb371;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Language Toggle Button */
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .language-toggle:hover {
+            background-color: #00bcd4;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.shutterstock.com/image-photo/manufacture-big-electronic-motors-industrial-260nw-1387231400.jpg') no-repeat center/cover;
+            color: black;
+            text-align: center;
+            margin: 0 10px;
+            padding: 100px 20px;
+            width: 100%; /* Adjust the width as needed */
+            max-width: 1200px; /* Limit the maximum width */
+            height: 400px; /* Adjust the height as needed */
+            margin: 40px auto; /* Center the rectangle */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(244, 244, 19);
+            text-align: center;
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Section Styling */
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            flex: 1 1 calc(33% - 20px);
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #444;
+        }
+
+        .service p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #contact {
+            text-align: center; /* Centers the text inside the contact section */
+            padding: 20px; /* Optional: Adds padding for better spacing */
+        }
+
+        #contact p {
+            margin: 10px 0; /* Adds spacing between paragraphs */
+        }
+
+    </style>
+</head>
+<body>
+    <button id="languageToggle" class="language-toggle">Switch to Tamil</button>
+
+    <header>
+        <h1 id="headerTitleEN">Abirami Electricals Sales and Service</h1>
+        <h1 id="headerTitleTA" style="display: none;">Abirami Electricals Sales and Service</h1>
+        <p id="headerTextEN">Your Trusted Partner for Motors and Electrical Services</p>
+        <p id="headerTextTA" style="display: none;">உங்கள் நீர் மொட்டார் மற்றும் எலக்டிரிகல் சேவைகளுக்கான நம்பகமான துணை</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <h2 id="heroTitleEN">Expert Solutions for Motors and Electrical Needs</h2>
+        <h2 id="heroTitleTA" style="display: none;">மொட்டார்கள் மற்றும் எலக்டிரிகல் தேவைகளுக்கான நிபுணத்துவமான தீர்வுகள்</h2>
+        <p id="heroTextEN">High-quality motors, professional servicing, and reliable customer support tailored for your needs.</p>
+        <p id="heroTextTA" style="display: none;">உங்கள் தேவைகளுக்கு உகந்த உயர் தர மொட்டார்கள், தொழில்முறை சேவை மற்றும் நம்பகமான வாடிக்கையாளர் ஆதரவு.</p>
+    </div>
+
+    <section id="services">
+        <h2 id="servicesTitleEN">Our Services</h2>
+        <h2 id="servicesTitleTA" style="display: none;">எங்கள் சேவைகள்</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://c8.alamy.com/comp/PYPDNJ/old-rusty-scratches-water-pump-with-an-electric-motor-dyed-in-blue-color-on-the-cold-water-pipe-PYPDNJ.jpg" alt="Water Motor Sales">
+                <h3 id="serviceTitle1EN">Water Motor Sales</h3>
+                <h3 id="serviceTitle1TA" style="display: none;">நீர் மொட்டார் விற்பனை</h3>
+                <p id="serviceText1EN">Offering a wide range of high-quality water motors for residential and industrial use.</p>
+                <p id="serviceText1TA" style="display: none;">வசதிக்கான மற்றும் தொழில்துறை பயன்பாட்டிற்கான உயர் தர நீர் மொட்டார்கள் பரந்த பரபரப்புடன் வழங்கப்படுகிறது.</p>
+            </div>
+            <div class="service">
+                <img src="https://media.istockphoto.com/id/1096101716/photo/three-phase-induction-motor-bearing-repair.jpg?s=612x612&w=0&k=20&c=8Xok3xy2CZTZw_u9YUj4uxMAfZN5Eb5ZYJa5eYe8kzo=" alt="Motor Repair Service">
+                <h3 id="serviceTitle2EN">Motor Repair Service</h3>
+                <h3 id="serviceTitle2TA" style="display: none;">மொட்டார் பழுதுபார்ப்பு சேவை</h3>
+                <p id="serviceText2EN">Professional repair and maintenance services for all kinds of motors, including HP and RNM types.</p>
+                <p id="serviceText2TA" style="display: none;">எச்பி மற்றும் ஆர்.என்.எம் வகைகளையும் உள்ளடக்கிய அனைத்து மொட்டார்களுக்கும் தொழில்முறை பழுது பராமரிப்பு சேவைகள்.</p>
+            </div>
+            <div class="service">
+                <img src="https://i.ytimg.com/vi/8sb-8-GiCUQ/sddefault.jpg" alt="Fan and Mixer Service">
+                <h3 id="serviceTitle3EN">Fan and Mixer Service</h3>
+                <h3 id="serviceTitle3TA" style="display: none;">காற்றுவாசி மற்றும் மிக்சர் சேவை</h3>
+                <p id="serviceText3EN">Expert repair and servicing for household appliances like fans and mixers.</p>
+                <p id="serviceText3TA" style="display: none;">குடியிருப்பு சாதனங்களுக்கு உதவியான பழுதுபார்ப்பு மற்றும் சேவை, காற்றுவாசி மற்றும் மிக்சர்கள் போன்றவை.</p>
+            </div>
+            <div class="service">
+                <img src="https://m.media-amazon.com/images/I/81gt-A8Ce-L.jpg" alt="Motor Sales">
+                <h3 id="serviceTitle4EN">Motor Sales</h3>
+                <h3 id="serviceTitle4TA" style="display: none;">மோட்டார் விற்பனை</h3>
+                <p id="serviceText4EN">All kind of water motors available here.</p>
+                <p id="serviceText4TA" style="display: none;"><p id="serviceText1TA" style="display: none;">இங்கு அனைத்து வகையான நீர் மோட்டார்களும் கிடைக்கும்.</p>.</p>
+            </div>
+            <div class="service">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/449958164/GD/TW/OT/25804565/plumbing-work-service-500x500.png" alt="Plumbing Works">
+                <h3 id="serviceTitle5EN">Plumbing Works</h3>
+                <h3 id="serviceTitle5TA" style="display: none;">குடையின்மை பணிகள்</h3>
+                <p id="serviceText5EN">Expert plumbing services for homes and businesses with guaranteed satisfaction.</p>
+                <p id="serviceText5TA" style="display: none;">வீட்டுகளுக்கும் வியாபாரங்களுக்கும் நம்பகமான குடையின்மை சேவைகள்.</p>
+            </div>
+            <div class="service">
+                <img src="https://5.imimg.com/data5/TG/HL/MY-35695686/tiles-fitting-500x500.jpg" alt="House Alterations">
+                <h3 id="serviceTitle6EN">House Alterations</h3>
+                <h3 id="serviceTitle6TA" style="display: none;">வீட்டுத் தொகுதிகள்</h3>
+                <p id="serviceText6EN">Professional house alterations and renovations tailored to your preferences.</p>
+                <p id="serviceText6TA" style="display: none;">உங்கள் விருப்பங்களுக்கு ஏற்ப வீடு மாற்றங்கள் மற்றும் புதுப்பிப்புகள்.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 id="contactTitleEN">Contact Us</h2>
+        <p>9444049314</p>
+        <p>vengadesan640@gmail.com</p>
+        <h2 id="contactTitleTA" style="display: none;">எங்களைத் தொடர்பு கொள்ளவும்</h2>
+        <p id="contactTextEN">For inquiries, quotes, and service requests, feel free to reach out to us.</p>
+        <p id="contactTextTA" style="display: none;">வினாக்கள், கோடுகள், மற்றும் சேவை கோரிக்கைகளுக்கு, எங்களை தொடர்பு கொள்ளவும்.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Abirami Electricals | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const languageToggle = document.getElementById('languageToggle');
+
+        languageToggle.addEventListener('click', () => {
+            const elementsEN = document.querySelectorAll('[id$="EN"]');
+            const elementsTA = document.querySelectorAll('[id$="TA"]');
+            
+            elementsEN.forEach(element => element.style.display = element.style.display === 'none' ? 'block' : 'none');
+            elementsTA.forEach(element => element.style.display = element.style.display === 'none' ? 'block' : 'none');
+            
+            const isTamil = languageToggle.textContent === 'Switch to Tamil';
+            languageToggle.textContent = isTamil ? 'Switch to English' : 'Switch to Tamil';
+        });
+    </script>
+</body>
+</html>
